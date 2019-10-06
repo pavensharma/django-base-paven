@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>Hello World</p>
+
+<p>Insert value:</p>
+<form action="{% url 'output' %}">
+  <textarea cols="10" rows="1" name="fulltext"></textarea>
+
+  <input type="submit" value="Submit" />
+</form>
+
+
+
+{% endblock %}
